@@ -4,7 +4,6 @@ using System.Linq;
 
 namespace ModernSystem.IO
 {
-
     public class Directory
     {
         public Path Path { get; }

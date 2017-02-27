@@ -45,6 +45,7 @@
     <Compile Include="Configuration\DictionaryConfiguration.cs" />
     <Compile Include="Configuration\NamespacedConfigurationDecorator.cs" />
     <Compile Include="Configuration\OverrideableConfigurationDecorator.cs" />
+    <Compile Include="Factories\ActivatorFactory`1.cs" />
     <Compile Include="Factories\ConstructorDiscoveryContext.cs" />
     <Compile Include="Factories\ConstructorDiscovery.cs" />
     <Compile Include="Factories\ConstructorDiscoveryFactory.cs" />
@@ -52,8 +53,18 @@
     <Compile Include="Factories\FuncFactory.cs" />
     <Compile Include="DefaultConstructorFactory.cs" />
     <Compile Include="Factories\InstanceFactory.cs" />
+    <Compile Include="IO\Directory.cs" />
+    <Compile Include="IO\DirectoryWatcher.cs" />
+    <Compile Include="IO\File.cs" />
+    <Compile Include="IO\IDirectoryWatchEventReceiver.cs" />
+    <Compile Include="IO\Path.cs" />
     <Compile Include="Linq\EnumerableExtensions.cs" />
     <Compile Include="Mapping\PropertyMapper.cs" />
+    <Compile Include="Numbers\ModernDouble.cs" />
+    <Compile Include="Numbers\ModernFloat.cs" />
+    <Compile Include="Numbers\ModernInt32.cs" />
+    <Compile Include="Numbers\ModernInt64.cs" />
+    <Compile Include="Numbers\ModernDecimal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
