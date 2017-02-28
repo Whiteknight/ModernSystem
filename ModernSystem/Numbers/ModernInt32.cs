@@ -8,5 +8,11 @@
             bool ok = int.TryParse(s, out i);
             return ok ? (int?)i : null;
         }
+
+        public static int ParseOrDefault(string s, int defaultValue)
+        {
+            int i;
+            return int.TryParse(s, out i) ? i : defaultValue;
+        }
     }
 }

@@ -60,6 +60,7 @@
     <Compile Include="IO\Path.cs" />
     <Compile Include="Linq\EnumerableExtensions.cs" />
     <Compile Include="Mapping\PropertyMapper.cs" />
+    <Compile Include="ModernEnum.cs" />
     <Compile Include="Numbers\ModernDouble.cs" />
     <Compile Include="Numbers\ModernFloat.cs" />
     <Compile Include="Numbers\ModernInt32.cs" />

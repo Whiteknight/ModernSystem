@@ -8,5 +8,11 @@
             bool ok = long.TryParse(s, out i);
             return ok ? (long?)i : null;
         }
+
+        public static long ParseOrDefault(string s, long defaultValue)
+        {
+            long i;
+            return long.TryParse(s, out i) ? i : defaultValue;
+        }
     }
 }
