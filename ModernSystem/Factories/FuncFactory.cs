@@ -1,7 +1,7 @@
-﻿using ModernSystem.Contracts;
-using System;
+﻿using System;
+using ModernSystem.Contracts;
 
-namespace ModernSystem
+namespace ModernSystem.Factories
 {
     public static class FuncFactory
     {

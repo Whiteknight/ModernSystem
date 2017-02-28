@@ -1,9 +1,8 @@
 ﻿using ModernSystem.Contracts;
 using System;
 
-namespace ModernSystem
+namespace ModernSystem.Factories
 {
-
     public class ActivatorFactory<TTarget> : IFactory<TTarget>
     {
         public TTarget Create()
@@ -15,5 +14,7 @@ namespace ModernSystem
         {
             return (TTarget)Activator.CreateInstance(typeof(TTarget), args ?? new object[0]);
         }
+
+        // TODO: Expose ActivationContext somehow, for increased flexibility
     }
 }

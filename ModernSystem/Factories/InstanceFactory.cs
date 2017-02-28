@@ -1,6 +1,6 @@
 ﻿using ModernSystem.Contracts;
 
-namespace ModernSystem
+namespace ModernSystem.Factories
 {
     public class InstanceFactory<TTarget> : IFactory<TTarget>
     {

@@ -34,18 +34,13 @@
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Configuration\ConfigFileConfiguration.cs" />
     <Compile Include="Configuration\DictionaryConfiguration.cs" />
     <Compile Include="Configuration\NamespacedConfigurationDecorator.cs" />
     <Compile Include="Configuration\OverrideableConfigurationDecorator.cs" />
-    <Compile Include="Factories\ActivatorFactory`1.cs" />
+    <Compile Include="Factories\ActivatorFactory.cs" />
     <Compile Include="Factories\ConstructorDiscoveryContext.cs" />
     <Compile Include="Factories\ConstructorDiscovery.cs" />
     <Compile Include="Factories\ConstructorDiscoveryFactory.cs" />
