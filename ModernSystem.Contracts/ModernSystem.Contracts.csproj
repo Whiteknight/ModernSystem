@@ -38,6 +38,8 @@
     <Compile Include="IConfiguration.cs" />
     <Compile Include="IFactory.cs" />
     <Compile Include="IMapper.cs" />
+    <Compile Include="ISerializer.cs" />
+    <Compile Include="IStringSerializer.cs" />
     <Compile Include="ITransformer`2.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

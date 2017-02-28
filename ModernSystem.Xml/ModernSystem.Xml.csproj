@@ -1,17 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0BCB3417-F508-4CD0-9F25-FC47CB99EB27}</ProjectGuid>
+    <ProjectGuid>{2B799FD1-FCAF-49DB-B27F-4E4FF942746A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ModernSystem</RootNamespace>
-    <AssemblyName>ModernSystem</AssemblyName>
+    <RootNamespace>ModernSystem.Xml</RootNamespace>
+    <AssemblyName>ModernSystem.Xml</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -32,48 +31,23 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Collections\Generic\DictionaryExtensions.cs" />
-    <Compile Include="Configuration\ConfigFileConfiguration.cs" />
-    <Compile Include="Configuration\DictionaryConfiguration.cs" />
-    <Compile Include="Configuration\NamespacedConfigurationDecorator.cs" />
-    <Compile Include="Configuration\OverrideableConfigurationDecorator.cs" />
-    <Compile Include="DateTimeExtensions.cs" />
-    <Compile Include="Factories\ActivatorFactory.cs" />
-    <Compile Include="Factories\ConstructorDiscoveryContext.cs" />
-    <Compile Include="Factories\ConstructorDiscovery.cs" />
-    <Compile Include="Factories\ConstructorDiscoveryFactory.cs" />
-    <Compile Include="Factories\ScoredConstructor.cs" />
-    <Compile Include="Factories\FuncFactory.cs" />
-    <Compile Include="DefaultConstructorFactory.cs" />
-    <Compile Include="Factories\InstanceFactory.cs" />
-    <Compile Include="IO\Directory.cs" />
-    <Compile Include="IO\DirectoryWatcher.cs" />
-    <Compile Include="IO\File.cs" />
-    <Compile Include="IO\IDirectoryWatchEventReceiver.cs" />
-    <Compile Include="IO\Path.cs" />
-    <Compile Include="Linq\EnumerableExtensions.cs" />
-    <Compile Include="Mapping\PropertyMapper.cs" />
-    <Compile Include="ModernEnum.cs" />
-    <Compile Include="Numbers\DoubleExtensions.cs" />
-    <Compile Include="Numbers\ModernDouble.cs" />
-    <Compile Include="Numbers\ModernFloat.cs" />
-    <Compile Include="Numbers\ModernInt32.cs" />
-    <Compile Include="Numbers\ModernInt64.cs" />
-    <Compile Include="Numbers\ModernDecimal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Serialization\Base64StringSerializer.cs" />
+    <Compile Include="Serialization\XmlStringSerializer.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ModernSystem.Contracts\ModernSystem.Contracts.csproj">
       <Project>{5690b167-e25c-4c96-8147-195709eb613c}</Project>
       <Name>ModernSystem.Contracts</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ModernSystem\ModernSystem.csproj">
+      <Project>{0bcb3417-f508-4cd0-9f25-fc47cb99eb27}</Project>
+      <Name>ModernSystem</Name>
+    </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
